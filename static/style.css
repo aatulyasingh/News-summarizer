@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f1a;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #333;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+#summary-box {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 1px solid #667eea;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#summary-box h2 {
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+#summary-text {
+    line-height: 1.8;
+    color: #ccc;
+}
+
+#headlines-box h2 {
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.headline-card {
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.headline-card:hover {
+    border-color: #667eea;
+    transform: translateX(5px);
+}
+
+.headline-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.headline-card a:hover {
+    color: #667eea;
+}
+
+.source {
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}

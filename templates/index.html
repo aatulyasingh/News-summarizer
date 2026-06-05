@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 AI News Summarizer</h1>
+            <<p class="subtitle">Powered by Groq AI & NewsAPI</p>
+             <p class="subtitle">Built by Atullya Siingh</p>>
+        </header>
+
+        <button id="fetchBtn" onclick="getNews()">
+            Get Today's News
+        </button>
+
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Fetching news and generating summary...</p>
+        </div>
+
+        <div id="summary-box" class="hidden">
+            <h2>🤖 AI Summary</h2>
+            <p id="summary-text"></p>
+        </div>
+
+        <div id="headlines-box" class="hidden">
+            <h2>📋 Top Headlines</h2>
+            <div id="headlines-list"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
